@@ -1,7 +1,15 @@
 # Classify-Students-Based-on-Study-Methods_202401100400056
 Classify Students Based on Study Methods
-https://colab.research.google.com/drive/1iFKY76h7CSdw5hqd_Xte8YhpVsShaNAE?usp=sharing
-![image](https://github.com/user-attachments/assets/dfe4ea34-0a0a-4bf3-8b2d-5457374de2dc)
-![Screenshot 2025-05-13 152801](https://github.com/user-attachments/assets/b2f995b8-4819-49e0-af57-72b44a69a402)
-![Screenshot 2025-05-13 152645](https://github.com/user-attachments/assets/b7ae12f4-22b3-4e14-af14-a168cbe08fce)
+Introduction
+Understanding how students learn can significantly enhance educational outcomes. This project aims to categorize students into different learning styles using unsupervised machine learning. Using data from a questionnaire with scores on visual, auditory, and kinesthetic preferences, we apply clustering to group students based on learning behaviours.
 
+c. Methodology
+1.	Dataset: The dataset includes scores representing student preferences for visual, auditory, and kinesthetic learning styles. Each student has a known label, which is used only for evaluation.
+2.	Preprocessing:
+o	Standardize feature data using Standard Scaler to normalize scale.
+3.	Clustering Model:
+o	Use K Means with k=3 to identify learning style clusters.
+4.	Evaluation:
+o	Map clusters to known labels via majority voting.
+o	Compute a confusion matrix, and visualize it as a heatmap.
+o	Calculate accuracy, precision, recall, and F1-score using classification report.
